@@ -1,6 +1,6 @@
 {
   "name": "@sebastienrousseau/biome-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shareable Biome configuration rules for ultra-fast Rust-based linting and formatting.",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
   "license": "ISC",
