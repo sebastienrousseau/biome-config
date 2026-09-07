@@ -1,7 +1,7 @@
 site_name = "biome-config"
 site_title = "@sebastienrousseau/biome-config — Shareable Biome configuration rules for ultra-fast Rust-based linting and formatting."
 site_description = "Shareable Biome configuration rules for ultra-fast Rust-based linting and formatting."
-base_url = "https://config.sebastienrousseau.com/biome-config"
+base_url = "https://sebastienrousseau.com/biome-config/"
 language = "en-GB"
 
 content_dir = "web/content"
