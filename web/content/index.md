@@ -58,6 +58,15 @@ f3_h: "Full TypeScript Definitions"
 f3_body: "Includes complete index.d.ts declarations for rich IDE autocompletion and type checking."
 f4_h: "Deterministic Quality Gates"
 f4_body: "Audited continuously with SLSA provenance, CodeQL, and automated test suites."
+proof_h: "Production Standards"
+proof_lead: "Engineered for high-assurance developer platforms and open-source infrastructure."
+proof_1_t: "100%"
+proof_1_d: "OpenSSF Best Practices passing status and automated scorecard audits."
+proof_2_t: "0"
+proof_2_d: "Runtime dependencies for lightning-fast installs and minimal attack surface."
+proof_3_t: "100%"
+proof_3_d: "TypeScript type coverage with comprehensive definitions."
+cta_final: "Explore Installation Guide"
 ---
 
 ## What is @sebastienrousseau/biome-config?
