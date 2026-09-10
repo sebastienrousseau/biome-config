@@ -1,31 +1,14 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
- * Modern Biome ESM Configuration
+ * ESM entrypoint.
+ *
+ * The configuration is defined once, in `index.cjs`, and re-exported here so the
+ * two module systems cannot drift apart. Node resolves a CommonJS default import
+ * to `module.exports`, which is exactly the value consumers of the CJS entry get.
  */
-export default {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "complexity": {
-        "noExtraBooleanCast": "error"
-      },
-      "correctness": {
-        "noUnusedVariables": "error"
-      },
-      "style": {
-        "useConst": "error"
-      }
-    }
-  },
-  "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2,
-    "lineEnding": "lf",
-    "lineWidth": 80
-  }
-};
+
+import config from "./index.cjs";
+
+export default config;

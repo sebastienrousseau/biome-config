@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * Advanced usage example for @sebastienrousseau/biome-config
  * Demonstrates overriding formatting and linting rules for custom projects.
@@ -24,6 +27,19 @@ const customConfig = {
 };
 
 console.log("=== Advanced Usage Example ===");
-console.log("Base line width:", baseConfig.formatter.lineWidth, "-> Custom:", customConfig.formatter.lineWidth);
-console.log("Base indent width:", baseConfig.formatter.indentWidth, "-> Custom:", customConfig.formatter.indentWidth);
-console.log("Custom style rule useConst:", customConfig.linter.rules.style.useConst);
+console.log(
+  "Base line width:",
+  baseConfig.formatter.lineWidth,
+  "-> Custom:",
+  customConfig.formatter.lineWidth,
+);
+console.log(
+  "Base indent width:",
+  baseConfig.formatter.indentWidth,
+  "-> Custom:",
+  customConfig.formatter.indentWidth,
+);
+console.log(
+  "Custom style rule useConst:",
+  customConfig.linter.rules.style.useConst,
+);

@@ -44,16 +44,21 @@ export interface BiomeConfig {
 ## Detailed Property Reference
 
 ### 1. `$schema`
+
 - **Type**: `string`
 - **Default**: `"https://biomejs.dev/schemas/1.8.0/schema.json"`
 - **Purpose**: Enables rich IDE auto-completion, hover tooltips, and schema validation in VS Code, JetBrains, and other editor environments.
 
 ### 2. `organizeImports`
+
 Controls automated import sorting and grouping.
+
 - `organizeImports.enabled` (`boolean`): Set to `true` to sort imports deterministically on save and during lint passes.
 
 ### 3. `linter`
+
 Controls Biome's static analysis engine.
+
 - `linter.enabled` (`boolean`): Master switch for the linting engine. Set to `true`.
 - `linter.rules.recommended` (`boolean`): When `true`, activates all upstream Biome recommended diagnostic rules.
 - `linter.rules.complexity.noExtraBooleanCast` (`"error"`): Flags redundant boolean casts (e.g. `Boolean(!!x)`) to simplify logical expressions.
@@ -61,7 +66,9 @@ Controls Biome's static analysis engine.
 - `linter.rules.style.useConst` (`"error"`): Requires `const` declarations for variables that are never reassigned after initialisation.
 
 ### 4. `formatter`
+
 Controls Biome's code formatting engine.
+
 - `formatter.enabled` (`boolean`): Master switch for formatting. Set to `true`.
 - `formatter.indentStyle` (`"space"`): Enforces space-based indentation for consistent multi-platform rendering.
 - `formatter.indentWidth` (`2`): Standard indentation depth of 2 spaces.

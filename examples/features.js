@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * Exhaustive Feature Showcase for @sebastienrousseau/biome-config
  * Covers 100% of configuration capabilities, rule categories, and formatting options.
@@ -9,7 +12,9 @@ console.log("=== 100% Feature Showcase: @sebastienrousseau/biome-config ===");
 
 // 1. Schema Validation Feature
 console.log("[Feature 1: Schema Validation]");
-assert(typeof config.$schema === "string" && config.$schema.includes("biomejs.dev"));
+assert(
+  typeof config.$schema === "string" && config.$schema.includes("biomejs.dev"),
+);
 console.log("  ✓ Official Biome schema declared:", config.$schema);
 
 // 2. Import Organization Feature
@@ -27,12 +32,18 @@ console.log("  ✓ linter.rules.recommended =", config.linter.rules.recommended)
 // 4. Complexity Rules Feature
 console.log("[Feature 4: Complexity Rules]");
 assert(config.linter.rules.complexity.noExtraBooleanCast === "error");
-console.log("  ✓ complexity.noExtraBooleanCast =", config.linter.rules.complexity.noExtraBooleanCast);
+console.log(
+  "  ✓ complexity.noExtraBooleanCast =",
+  config.linter.rules.complexity.noExtraBooleanCast,
+);
 
 // 5. Correctness Rules Feature
 console.log("[Feature 5: Correctness Rules]");
 assert(config.linter.rules.correctness.noUnusedVariables === "error");
-console.log("  ✓ correctness.noUnusedVariables =", config.linter.rules.correctness.noUnusedVariables);
+console.log(
+  "  ✓ correctness.noUnusedVariables =",
+  config.linter.rules.correctness.noUnusedVariables,
+);
 
 // 6. Style Rules Feature
 console.log("[Feature 6: Style Rules]");
@@ -52,4 +63,6 @@ console.log("  ✓ formatter.indentWidth =", config.formatter.indentWidth);
 console.log("  ✓ formatter.lineEnding =", config.formatter.lineEnding);
 console.log("  ✓ formatter.lineWidth =", config.formatter.lineWidth);
 
-console.log("\n✅ 100% of biome-config features and options validated successfully.");
+console.log(
+  "\n✅ 100% of biome-config features and options validated successfully.",
+);
