@@ -17,7 +17,7 @@ permissions:
 jobs:
   security:
     name: Supply chain
-    uses: sebastienrousseau/config/.github/workflows/reusable-security.yml@feat/close-audit-gaps
+    uses: sebastienrousseau/config/.github/workflows/reusable-security.yml@main
     permissions:
       contents: read
       security-events: write
