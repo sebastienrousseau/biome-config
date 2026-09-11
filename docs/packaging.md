@@ -114,14 +114,9 @@ respective toolchains' reproducibility.
 Three things the packaging checklist asks for are **intentionally absent**, and
 the reasoning is recorded here rather than left as an unexplained gap:
 
-- **No container image.** The package is inert configuration consumed at
-  build time by a tool running on the host. A container would ship a
-  filesystem nobody executes.
-- **No C-FFI surface.** There is no callable API — the package exports a data
-  object. A cdylib would export nothing meaningful.
-- **No Repology badge yet.** Repology tracks a project once distributions do.
-  The badge goes in the README when at least two distributions carry the
-  package, not before; a badge for nothing is noise.
+- **No container image.** The package is inert configuration consumed at build time by a tool running on the host. A container would ship a filesystem nobody executes.
+- **No C-FFI surface.** There is no callable API — the package exports a data object. A cdylib would export nothing meaningful.
+- **No Repology badge yet.** Repology tracks a project once distributions do. The badge goes in the README when at least two distributions carry the package, not before; a badge for nothing is noise.
 
 ## Security contact
 
