@@ -1,0 +1,18 @@
+Source: node-sebastienrousseau-biome-config
+Section: javascript
+Priority: optional
+Maintainer: Sebastien Rousseau <sebastian.rousseau@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/sebastienrousseau/biome-config
+Rules-Requires-Root: no
+
+Package: node-sebastienrousseau-biome-config
+Architecture: all
+Depends: ${misc:Depends}, nodejs (>= 20)
+Description: Shareable Biome configuration rules for ultra-fast Rust-based linting and formatting
+ @sebastienrousseau/biome-config is a shareable configuration preset with no runtime
+ dependencies: inert data plus a loader.
+ .
+ Installed under /usr/share/nodejs so that require() resolves it without
+ further configuration.
