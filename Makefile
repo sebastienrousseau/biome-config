@@ -48,3 +48,6 @@ sbom:
 
 clean:
 	rm -rf node_modules public sbom.cdx.json
+
+# The devcontainer gate builds this container and runs `make all` when
+# this file, .devcontainer/, or the manifest changes.
