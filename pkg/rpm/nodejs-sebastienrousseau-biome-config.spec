@@ -41,5 +41,5 @@ install -pm 0644 package.json %{buildroot}%{sitelib}/%{npm_scope}/%{npm_bare}/
 %{sitelib}/%{npm_scope}/%{npm_bare}/
 
 %changelog
-* Thu Sep 11 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com> - 0.0.7-1
+* Fri Sep 11 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com> - 0.0.7-1
 - Initial packaging.
