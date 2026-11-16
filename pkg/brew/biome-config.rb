@@ -6,7 +6,7 @@
 class BiomeConfig < Formula
   desc "Shareable Biome configuration rules for ultra-fast Rust-based linting and formatting"
   homepage "https://github.com/sebastienrousseau/biome-config"
-  url "https://registry.npmjs.org/@sebastienrousseau/biome-config/-/biome-config-0.0.7.tgz"
+  url "https://registry.npmjs.org/@sebastienrousseau/biome-config/-/biome-config-0.0.9.tgz"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on "node"
